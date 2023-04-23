@@ -1,28 +1,18 @@
+import 'package:dday_flutter/screens/home.dart';
 import 'package:flutter/material.dart';
 
-Color backgroundColor = Color(0xFFFFF3E2);
-Color tempColor = Color(0xFFFFE5CA);
-Color barColor = Color(0xFFFA9884);
-Color hartColor = Color(0xFFE74646);
 void main() {
-  runApp(const App());
+  runApp(const DdayApp());
 }
 
 
-class App extends StatelessWidget {
-  const App({super.key});
+class DdayApp extends StatelessWidget {
+  const DdayApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: backgroundColor,
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(10),
-          ),
-        ),
-      ),
+      home: ddayHome(),
     );
   }
 }
